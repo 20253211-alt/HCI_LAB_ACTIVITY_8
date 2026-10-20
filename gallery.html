@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYRACUSE UNITED</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+    }
+
+    body {
+      background-color: #d6d6d6;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #273527;
+      color: #ffffff;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    .brand-title {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px; 
+    }
+
+    .brand-logo {
+      width: 100px;       
+      height: 45px;       
+      border-radius: 10%; 
+      object-fit: cover;
+    }
+
+    nav {
+      background-color: #262c26;
+      padding: 8px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    nav a.active, nav a:hover {
+      color: #f8f5f5;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 2px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 30px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 50px;
+      max-width: 1300px;
+      width: 300%; 
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(31, 153, 6, 0.2);
+    }
+
+    .card h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1.5px;
+      color: #2a3028;
+      margin-bottom: 35px;
+    }
+
+    .avatar-group {
+      display: flex;
+      justify-content: center;
+      gap: 160px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .avatar-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .avatar {
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: #cbd2c8;
+      border: 2px solid #a3ae9f;
+      margin-bottom: 8px;
+    }
+    .avatar-name {
+      font-size: 0.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #2a3028;
+    }
+
+    .description {
+      font-size: 0.85rem;
+      color: #242323;
+      line-height: 1.5;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #151d12;
+      color: #c2c9bf;
+      text-align: center;
+      padding: 12px;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-title">
+      <img src="logo.png" alt="Logo" class="brand-logo">
+      <span>SYRACUSE UNITED</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="gallery.html" class="active">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h1>OUR GALLERY COLLECTION</h1>
+
+      
+      <div class="avatar-group">
+        <div class="avatar-item">
+          <img src="p1.jpeg" alt="Member 1" class="avatar">
+          <span class="avatar-name">Don Juan PH</span>
+        </div>
+        <div class="avatar-item">
+          <img src="p2.jpeg" alt="Member 2" class="avatar">
+          <span class="avatar-name">Turab Kysmir PH</span>
+        </div>
+        <div class="avatar-item">
+          <img src="p3.jpeg" alt="Member 3" class="avatar">
+          <span class="avatar-name">Christian PH</span>
+        </div>
+        <div class="avatar-item">
+          <img src="p4.jpeg" alt="Member 4" class="avatar">
+          <span class="avatar-name">Dominic PH</span>
+        </div>
+      </div>
+
+      <div class="avatar-group">
+        <div class="avatar-item">
+          <img src="p5.jpeg" alt="Member 5" class="avatar">
+          <span class="avatar-name">2019 model Italy</span>
+        </div>
+        <div class="avatar-item">
+          <img src="p6.jpeg" alt="Member 6" class="avatar">
+          <span class="avatar-name">Gabriel Caps</span>
+        </div>
+        <div class="avatar-item">
+          <img src="p7.jpeg" alt="Member 7" class="avatar">
+          <span class="avatar-name">made in Japan</span>
+        </div>
+        <div class="avatar-item">
+          <img src="p8.jpeg" alt="Member 8" class="avatar">
+          <span class="avatar-name">21k Run</span>
+        </div>
+      </div>
+
+      <div class="avatar-group">
+        <div class="avatar-item">
+          <img src="p9.jpeg" alt="Member 9" class="avatar">
+          <span class="avatar-name">Atok PH</span>
+        </div>
+        <div class="avatar-item">
+          <img src="p10.jpeg" alt="Member 10" class="avatar">
+          <span class="avatar-name">Billiards PH</span>
+        </div>
+        <div class="avatar-item">
+          <img src="p11.jpeg" alt="Member 11" class="avatar">
+          <span class="avatar-name">North Luzon loop PH</span>
+        </div>
+        <div class="avatar-item">
+          <img src="p12.jpeg" alt="Member 12" class="avatar">
+          <span class="avatar-name">Daniel Padilpat PH</span>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; ERA OF 2027 - SYRACUSE UNITED
+  </footer>
+
+</body>
+</html>
